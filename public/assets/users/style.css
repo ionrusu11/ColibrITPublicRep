@@ -1,0 +1,388 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+.textSmall{
+    font-size: 16px;
+    font-weight: 300px;
+}
+.textMedium{
+    font-size: 20px;
+    font-weight: 500px;
+}
+.textBig{
+    font-size: 25px;
+    font-weight: 700px;
+}
+
+.poosterImg{
+    position: absolute;
+    width: calc(100% - 0px);
+    height: calc(100vh - 0px);
+    padding: 15px;
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(2px) brightness(80%);
+    z-index: 0;
+
+}
+.poosterContainer{
+    width: calc(100% - 30px);
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    position: relative;
+    z-index: 3;
+}
+.headerTop{
+    padding: 10px 20px;
+    position: fixed;
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+
+}
+.langSelect{
+    display: flex;
+    border: 3px #000047 solid;
+
+}
+.langOption {
+    padding: 5px;
+}
+.selectedLang{
+    background-color:#000047;
+    color: white;
+
+}
+.bannerSlogan{
+    text-align: center;
+    width: 80vw;
+    margin:0 auto;
+    font-size: calc(2vw + 2vh);
+    font-weight: 2000px;
+    color: white;
+}
+
+.mainButton{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 210, 152);
+    padding: 5px;
+    border-radius: 5px;
+    margin:0 auto;
+    margin-bottom: 10vh;
+    background-color: white;
+    padding: 20px 40px;
+    color: 000050;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.mainButton:hover{
+    text-decoration: none;
+    background-color: #008AAC;
+    color: white;
+}
+.mainButton:active{
+    transition: 0.1s;
+    border-radius: 10px;
+    transform: scale(0.9);
+}
+.sliderSection{
+    width: 90vw;
+    max-width: 900px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.authorityListContainer{
+    width: 90vw;
+    max-width: 900px;
+    display: flex;
+    overflow: hidden;
+}
+.authorityList{
+    display: flex;
+    margin-left: 0px;
+    transition: 1s;
+}
+.authorityItem{
+    margin: 10px;
+    height: 150px;
+    width: 100vw;
+    overflow: hidden;
+    transition: 0.4s;
+
+}
+.authorityItem:hover{
+    transform: scale(1.05);
+}
+.authorityImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: brightness(80%);
+    transition: 0.4s;
+}
+.authorityItem:hover>.authorityImg{
+    filter: brightness(100%);
+}
+.authorityText{
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: -50%;
+    backdrop-filter: blur(5px);
+    transition: 0.4s;
+}
+.authorityItem:hover>.authorityText{
+    backdrop-filter: blur(10px);
+}
+
+.postsSection{
+    width: 90vw;
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.postsContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebe9e9;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.postItem{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #ebe9e9;
+    border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    transition: 0.4s;
+}
+.postItem:hover{
+    background-color: #f3f3f3;
+}
+.postItem:last-child{
+    border-bottom: none;
+}
+.postImg{
+    width: 200px;
+    border-radius: 3px;
+}
+.postText{
+    margin-left: 10px;
+}
+.postText .textMedium{
+    border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 600px) {
+    .postItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .postText{
+        margin-top: 10px;
+        margin-left: 0px;
+
+    }
+}
+
+
+.footerContainer{
+
+    background-color:#000050;
+    padding: 30px 15px;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo1{
+    height: 40px;
+    width: 80px;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.logo2{
+    height: 50px;
+    width: 100px;
+    background-image: url('img/logo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.logo3{
+    height: 50px;
+    width: 100px;
+    background-image: url('img/logo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.headerContainer{
+    background-color:#000050;
+    padding: 20px 30px;
+    color:white;
+}
+.formContainer{
+    width: 100vw;
+    max-width: 900px;
+    background-color:#FCFCFC;
+    min-height: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    width: 90vw;
+    max-width: 750px;
+    margin: 25px 0;
+    margin-bottom: 100px;
+}
+.formSection{
+    padding: 0 20px ;
+    border-left: 1px solid #ccc;
+}
+.inputTitle{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type=text], input[type=tel], input[type=email], select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    max-width: 400px;
+    height: 50vw;
+    max-height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    resize: none;
+}
+input:focus, select:focus, textarea:focus{
+    border: 1px solid #ccc;
+    background-color: white;
+}
+input[type="file"] {
+    display: none;
+}
+.fileUpload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    height: 50vw;
+    max-height: 200px;
+    border-radius: 4px;
+
+
+    background: linear-gradient(to right, #ccc 4px, transparent 4px) 0 0,
+            linear-gradient(to right, #ccc 4px, transparent 4px) 0 100%,
+            linear-gradient(to left, #ccc 4px, transparent 4px) 100% 0,
+            linear-gradient(to left, #ccc 4px, transparent 4px) 100% 100%,
+            linear-gradient(to bottom, #ccc 4px, transparent 4px) 0 0,
+            linear-gradient(to bottom, #ccc 4px, transparent 4px) 100% 0,
+            linear-gradient(to top, #ccc 4px, transparent 4px) 0 100%,
+            linear-gradient(to top, #ccc 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-color: #f7f7f7;
+
+}
+.fileUploadSimbol{
+    font-size: 50px;
+    font-weight: 700;
+    color: #ccc;
+}
+.checkbox {
+    transform-origin: left center;
+    transform: scale(2);
+    cursor: pointer;
+}
+#contactDataContainer{
+    transition: 0.7s;
+    max-height: 1000px;
+    overflow: hidden;
+}
+.submitButton{
+    width: 80%;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: #3131FF;
+    color: white;
+    margin: 30px 0px;
+    border: none;
+    cursor: pointer;
+}
+.fileUpload:focus, input:focus, select:focus, textarea:focus{
+    transition: 0s;
+    border: 1px solid #818181;
+    background-color: white;
+    outline: none;
+}
+.fileUpload:hover, input:hover, select:hover, textarea:hover{
+    transition: 0.3s;
+    background-color: white;
+
+}
+.submitButton:hover{
+    transition: 0.3s;
+    background-color: #0000EB;
+
+}
+
+
+
+
